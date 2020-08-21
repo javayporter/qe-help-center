@@ -1,26 +1,58 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import UserStore from './Stores/userStore';
+import LoginForm from './Components/LoginForm';
+import InputField from './Components/InputField';
+import SubmitButton from './Components/SubmitButton';
 import './App.css';
+import { Layout, Header, Textfield, Navigation, Drawer, Content } from 'react-mdl';
+import { Link } from 'react-router-dom';
+import Main from './Components/Main';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render() {
+    return (
+    
+      <div style={{height: '1000px', position: 'relative'}}>
+      <Layout fixedHeader fixedDrawer>
+        <Header title="QE 411 AND SOME!">
+            <Textfield
+                value=""
+                onChange={() => {}}
+                label="Search"
+                expandable
+                expandableIcon="search"
+            />
+            </Header>
+            {/* <HeaderRow>
+                <Navigation>
+                    <Link to="/tools">Tools</Link>
+                    <Link to="/automation">Automation</Link>
+                    <Link to="/resources">Resources</Link>
+                    <Link to="/procedures">Procedures</Link>
+                    <Link to="/helpful">TEST</Link>
+                    
+                </Navigation>
+            </HeaderRow> */}
+    
+        <Drawer title="Menu">
+            <Navigation>
+                    <Link to="/tools">Tools</Link>
+                    <Link to="/automation">Automation</Link>
+                    <Link to="/resources">Resources</Link>
+                    <Link to="/procedures">Procedures</Link>
+                    <Link to="/helpful">Testing QBO/BMT</Link>
+            </Navigation>
+        </Drawer>
+        <Content>
+            <div className="page-content" />
+            <Main/>
+        </Content>
+    </Layout>
+</div>
+    );
+  }
 }
+
 
 export default App;
