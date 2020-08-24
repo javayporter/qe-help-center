@@ -4,7 +4,7 @@ class Automation extends Component {
     render() {
         return(
             <div>
-                <h1>Automation Page</h1>
+                <h1>Automation age</h1>
             </div>
                 
             
