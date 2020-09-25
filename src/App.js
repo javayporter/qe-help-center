@@ -15,7 +15,7 @@ class App extends Component {
     
       <div style={{height: '1000px', position: 'relative'}}>
       <Layout fixedHeader fixedDrawer>
-        <Header title="QE 411 AND SOME!">
+        <Header title="QE HELP CENTER">
             <Textfield
                 value=""
                 onChange={() => {}}
