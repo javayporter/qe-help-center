@@ -5,6 +5,9 @@ class Procedures extends Component {
         return(
             <div>
                 <h1>Procedures Page</h1>
+
+
+                
             </div>
         )
     }

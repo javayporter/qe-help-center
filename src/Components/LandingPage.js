@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import {Grid, Cell, Button} from 'react-mdl';
+// import {Grid, Cell, Button} from 'react-mdl';
 import Carousel from 'react-bootstrap/Carousel';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-// import './LandingPage.css';
+import './LandingPage.css';
 
 
 class LandingPage extends Component {
@@ -12,17 +12,16 @@ class LandingPage extends Component {
             
             <div style ={{width: '100%', margin: 'auto'}}>
 
-<Jumbotron>
+<Jumbotron className="spacing">
   <h1>Welcome, User!</h1>
   <p>
-    This is a simple hero unit, a simple jumbotron-style component for calling
-    extra attention to featured content or information.
+    Welcome to the QE Help Center! Here you'll find application setup guides, testing resources and much more. Click the icon to review the tool tips.
   </p>
   
 </Jumbotron>    
 
                  {/* Team Carousel */}
-            <Carousel>
+            <Carousel className="float">
         <Carousel.Item>
     <img
       className="d-block w-50 carousel-images"
@@ -59,7 +58,7 @@ class LandingPage extends Component {
     />
 
     <Carousel.Caption>
-      <h3>Certification/Trainings</h3>
+      <h3 className="gray-text">Certification/Trainings</h3>
       {/* <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
     </Carousel.Caption>
   </Carousel.Item>

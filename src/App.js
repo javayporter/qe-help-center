@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import UserStore from './Stores/userStore';
-import LoginForm from './Components/LoginForm';
-import InputField from './Components/InputField';
-import SubmitButton from './Components/SubmitButton';
+// import UserStore from './Stores/userStore';
+// import LoginForm from './Components/LoginForm';
+// import InputField from './Components/InputField';
+// import SubmitButton from './Components/SubmitButton';
+// import TitleHeader from './Components/TitleHeader';
 import './App.css';
 import { Layout, Header, Textfield, Navigation, Drawer, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import Main from './Components/Main';
+
 
 
 class App extends Component {
@@ -24,6 +26,7 @@ class App extends Component {
                 expandableIcon="search"
             />
             </Header>
+            {/* <TitleHeader></TitleHeader> */}
             {/* <HeaderRow>
                 <Navigation>
                     <Link to="/tools">Tools</Link>
