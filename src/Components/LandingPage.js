@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import './LandingPage.css';
+import Footer from './Footer';
 
 
 class LandingPage extends Component {
@@ -17,14 +18,11 @@ class LandingPage extends Component {
   <p>
     Welcome to the QE Help Center! Here you'll find application setup guides, testing resources and much more. Click the icon to review the tool tips.
   </p>
-  
-</Jumbotron>    
 
-                 {/* Team Carousel */}
-            <Carousel className="float">
+  <Carousel className="float">
         <Carousel.Item>
     <img
-      className="d-block w-50 carousel-images"
+      className="d-block carousel-images"
       src="https://cdn.iconscout.com/icon/free/png-256/office-computer-screen-desktop-graph-chart-statics-12447.png"
       alt="qe reporting icon"
       height="400"
@@ -36,7 +34,7 @@ class LandingPage extends Component {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-50 carousel-images"
+      className="d-block carousel-images"
       src="https://i.pinimg.com/originals/44/f0/0d/44f00d6dc54c73e29bcc362c1bd5cd8a.png"
       alt="coding resources icon"
       height="400"
@@ -49,7 +47,7 @@ class LandingPage extends Component {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-50 carousel-images"
+      className="d-block carousel-images"
       src="https://www.iconfinder.com/data/icons/learning-and-education-1/200/02-512.png"
       alt="certification-trainings"
       height="400"
@@ -63,6 +61,10 @@ class LandingPage extends Component {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+  
+</Jumbotron>    
+
+
 
  
 
@@ -74,6 +76,7 @@ class LandingPage extends Component {
              <p>This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward.</p>
                  </Cell>
              </Grid> */}
+             <Footer/>
              </div>
         )
     }

@@ -7,9 +7,13 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 5em;
+    
 }  
 
+.left {
+    float: right;
+}
 .gray-text {
     color: rgb(36, 36, 36);
 }

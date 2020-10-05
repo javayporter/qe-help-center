@@ -8,6 +8,7 @@ import './App.css';
 import { Layout, Header, Textfield, Navigation, Drawer, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import Main from './Components/Main';
+// import Footer from './Components/Footer';
 
 
 
@@ -16,7 +17,7 @@ class App extends Component {
     return (
     
       <div style={{height: '1000px', position: 'relative'}}>
-      <Layout fixedHeader fixedDrawer>
+      <Layout fixedHeader>
         <Header title="QE HELP CENTER">
             <Textfield
                 value=""
@@ -38,7 +39,7 @@ class App extends Component {
                 </Navigation>
             </HeaderRow> */}
     
-        <Drawer title="Menu">
+        <Drawer title="Home">
             <Navigation>
                     <Link to="/tools">Tools</Link>
                     <Link to="/automation">Automation</Link>

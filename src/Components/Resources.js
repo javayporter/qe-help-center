@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Grid, Cell, Tab, Tabs} from 'react-mdl';
 import ListGroup from 'react-bootstrap/ListGroup';
 import './Resources.css';
+import Footer from './Footer';
 
 class Resources extends Component {
     render() {
@@ -10,17 +11,17 @@ class Resources extends Component {
 
                         <div className="demo-tabs">
                 <Tabs>
-                    <Tab>Starks</Tab>
-                    <Tab>Lannisters</Tab>
-                    <Tab>Targaryens</Tab>
+                    <Tab>Links</Tab>
+                    <Tab>Pending</Tab>
+                    <Tab>Pending</Tab>
                 </Tabs>
                 <section>
-                    <div className="content">Content for the tab:</div>
+                    <div className="content"></div>
                 </section>
             </div>      
 
                 <Grid className="demo-grid-1">
-        <Cell className="rounded-border" col={3}><h4>BMT Links</h4>
+        <Cell className="rounded-border" col={3}><h5>BMT Links</h5>
         {/* Stage 5 Links */}
             <h5>Stage 5</h5>
         <ListGroup defaultActiveKey="https://qa-procenter.mhelpdesk.io/?u=https://office-stage5.plat.angieslist.com">
@@ -70,11 +71,11 @@ class Resources extends Component {
     </ListGroup.Item>
   </ListGroup>
                </Cell>
-        <Cell className="rounded-border" col={6}><h4>JIRA/Confluence Links</h4>
+        <Cell className="rounded-border" col={6}><h5>JIRA/Confluence Links</h5>
                 <p>jwt.io</p>
                 <p>Epoch Converter</p>
                 <p>Developer Console (Browser)</p></Cell>
-        <Cell className="rounded-border" col={3}><h4>Other Links</h4>
+        <Cell className="rounded-border" col={3}><h5>Other Links</h5>
                     {/* Other Links Links */}
               {/* <h5>JIRA/Confluence Links</h5> */}
               <ListGroup defaultActiveKey="https://jwt.io">
@@ -95,7 +96,7 @@ class Resources extends Component {
   
     </Grid>
                 
-               
+            <Footer/>   
             </div>
         )
     }
