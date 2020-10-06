@@ -7,8 +7,8 @@ import './Resources.css';
 // Consts (Link Descriptions) //
 const selectACustomerLinkDesc = 'Login and redirect to Select A Customer Page';
 const officeAppLoginLinkDesc = 'Log into Office App';
-const officeAppPriceListLink = 'Price List Page (Office App)';
-const officeAppCustomersLink = 'Customers Page (Office App)';
+const officeAppPriceListLinkDesc = 'Price List Page (Office App)';
+const officeAppCustomersLinkDesc = 'Customers Page (Office App)';
 
 // Consts (Links) //
 // Stage 5
@@ -61,10 +61,10 @@ class Resources extends Component {
       {officeAppLoginLinkDesc}
     </ListGroup.Item>
     <ListGroup.Item action href={stage5_officeAppPriceListLink} disabled>
-        {officeAppPriceListLink}
+        {officeAppPriceListLinkDesc}
     </ListGroup.Item>
     <ListGroup.Item action href={stage5_officeAppCustomersLink} disabled>
-      {officeAppCustomersLink}
+      {officeAppCustomersLinkDesc}
     </ListGroup.Item>
   </ListGroup>
           {/* Stage Sierra Links */}
@@ -78,10 +78,10 @@ class Resources extends Component {
       {officeAppLoginLinkDesc} 
     </ListGroup.Item>
     <ListGroup.Item action href={stageSierra_officeAppPriceListLink} disabled>
-        {officeAppPriceListLink}
+        {officeAppPriceListLinkDesc}
     </ListGroup.Item>
     <ListGroup.Item action href={stageSierra_officeAppCustomersLink} disabled>
-      {officeAppCustomersLink}
+      {officeAppCustomersLinkDesc}
     </ListGroup.Item>
   </ListGroup>
             {/* Stage PROD Links */}
@@ -95,10 +95,10 @@ class Resources extends Component {
       {officeAppLoginLinkDesc}
     </ListGroup.Item>
     <ListGroup.Item action href={prod_officeAppPriceListLink} disabled>
-        {officeAppPriceListLink}
+        {officeAppPriceListLinkDesc}
     </ListGroup.Item>
     <ListGroup.Item action href={prod_officeAppCustomersLink} disabled>
-      {prod_officeAppCustomersLink}
+      {officeAppCustomersLinkDesc}
     </ListGroup.Item>
   </ListGroup>
                </Cell>
