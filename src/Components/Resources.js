@@ -2,11 +2,12 @@ import React, {Component} from 'react';
 import {Grid, Cell, Tab, Tabs} from 'react-mdl';
 import ListGroup from 'react-bootstrap/ListGroup';
 import './Resources.css';
-import Footer from './Footer';
+
 
 class Resources extends Component {
     render() {
         return(
+         
             <div style ={{width: '100%', margin: 'auto'}}>
 
                         <div className="demo-tabs">
@@ -96,7 +97,7 @@ class Resources extends Component {
   
     </Grid>
                 
-            <Footer/>   
+              
             </div>
         )
     }

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-// import {Grid, Cell, Button} from 'react-mdl';
+import {Grid, Cell } from 'react-mdl';
 import Carousel from 'react-bootstrap/Carousel';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import './LandingPage.css';
-import Footer from './Footer';
+
 
 
 class LandingPage extends Component {
@@ -14,11 +14,14 @@ class LandingPage extends Component {
             <div style ={{width: '100%', margin: 'auto'}}>
 
 <Jumbotron className="spacing">
+<Grid>
+  <Cell col={4}>
   <h1>Welcome, User!</h1>
   <p>
     Welcome to the QE Help Center! Here you'll find application setup guides, testing resources and much more. Click the icon to review the tool tips.
   </p>
-
+  </Cell>
+  <Cell col={8}>
   <Carousel className="float">
         <Carousel.Item>
     <img
@@ -61,8 +64,10 @@ class LandingPage extends Component {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+</Cell>
+ </Grid> 
+</Jumbotron>
   
-</Jumbotron>    
 
 
 
@@ -76,7 +81,7 @@ class LandingPage extends Component {
              <p>This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward.</p>
                  </Cell>
              </Grid> */}
-             <Footer/>
+             
              </div>
         )
     }

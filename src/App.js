@@ -8,6 +8,7 @@ import './App.css';
 import { Layout, Header, Textfield, Navigation, Drawer, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import Main from './Components/Main';
+import Footer from './Components/Footer';
 // import Footer from './Components/Footer';
 
 
@@ -52,8 +53,11 @@ class App extends Component {
             <div className="page-content" />
             <Main/>
         </Content>
+        <Footer/>  
     </Layout>
+    
 </div>
+
     );
   }
 }

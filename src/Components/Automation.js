@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Grid, Cell, Tab, Tabs} from 'react-mdl';
 import ListGroup from 'react-bootstrap/ListGroup';
 import './Automation.css';
-import Footer from './Footer';
+
 
 class Automation extends Component {
     render() {
@@ -76,8 +76,9 @@ Price List Page (Office App)
 
 </Grid>
     
-<Footer/>   
+  
 </div>
+
                 
             
         )

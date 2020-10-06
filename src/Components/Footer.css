@@ -1,0 +1,8 @@
+.sticky-footer {
+background-color:#29a036;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   max-height: 3em;
+   color: white;
+}
