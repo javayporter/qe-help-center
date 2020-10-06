@@ -4,25 +4,29 @@ import Carousel from 'react-bootstrap/Carousel';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import './LandingPage.css';
 
+// Consts //
+const welcomeUser = "Welcome User,";
+const welcomeMessage = "Welcome to the QE Help Center! Here you'll find application setup guides, testing resources and much more. Click the icon to review the tool tips.";
+
 
 
 class LandingPage extends Component {
     render () {
         return (
 
-            
-            <div style ={{width: '100%', margin: 'auto'}}>
+<div style ={{width: '100%', margin: 'auto'}}>
 
+{/* Welcome Jumbotron */} 
 <Jumbotron className="spacing">
+
+{/* Grid contains 2 cells that store/display the welcome message and carousel */}
 <Grid>
   <Cell col={4}>
-  <h1>Welcome, User!</h1>
-  <p>
-    Welcome to the QE Help Center! Here you'll find application setup guides, testing resources and much more. Click the icon to review the tool tips.
-  </p>
+    <h1>{welcomeUser}</h1>
+    <p>{welcomeMessage}</p>
   </Cell>
   <Cell col={8}>
-  <Carousel className="float">
+    <Carousel className="float">
         <Carousel.Item>
     <img
       className="d-block carousel-images"
@@ -31,11 +35,11 @@ class LandingPage extends Component {
       height="400"
     />
     <Carousel.Caption>
-      <h3>QE Reporting</h3>
-      {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+    <h3>QE Reporting</h3>
+      
     </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
+    </Carousel.Item>
+    <Carousel.Item>
     <img
       className="d-block carousel-images"
       src="https://i.pinimg.com/originals/44/f0/0d/44f00d6dc54c73e29bcc362c1bd5cd8a.png"
@@ -44,11 +48,11 @@ class LandingPage extends Component {
     />
 
     <Carousel.Caption>
-      <h3>Coding Resources</h3>
-      {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+    <h3>Coding Resources</h3>
+      
     </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
+    </Carousel.Item>
+    <Carousel.Item>
     <img
       className="d-block carousel-images"
       src="https://www.iconfinder.com/data/icons/learning-and-education-1/200/02-512.png"
@@ -59,30 +63,17 @@ class LandingPage extends Component {
     />
 
     <Carousel.Caption>
-      <h3 className="gray-text">Certification/Trainings</h3>
-      {/* <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
+      <h3 className="gray-text">Trainings</h3>
+    
     </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
-</Cell>
- </Grid> 
+    </Carousel.Item>
+    </Carousel>
+  </Cell>
+</Grid> 
 </Jumbotron>
   
 
-
-
- 
-
-               
-            {/* <Grid className="landing-grid">
-                <Cell col={12}>
-             <h1>Landing Page</h1>
-            
-             <p>This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward. This is a test to see if the page will continue to load downward.</p>
-                 </Cell>
-             </Grid> */}
-             
-             </div>
+</div>
         )
     }
 }
